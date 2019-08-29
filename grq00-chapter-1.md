@@ -45,6 +45,10 @@ _6.2. Run the following command: `TZ=America/New_York date` and notice the diffe
 
 Replace this line with your answer.
 
+_6.3. The timezone definition files for the Americas are located in the directory `/usr/share/zoneinfo/America`. List the files in this directory and find a West Coast city name. Using the `TZ` environment variable from example 6.2, what command would you issue to print the current date and time in `PDT` or Pacific Daylight Time. Test your response._
+
+Replace this line with your answer.
+
 _For each part below there is an example using `grep` with an option. Scroll through the manual for `grep` to determine what each option means and describe in a single English sentence what each command does._
 
 _7.1. `cat /usr/share/dict/words | grep -c ^foo`_
