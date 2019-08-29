@@ -21,7 +21,7 @@ _2.1. Is there a program named `wget` in the `learncli` COMP290 container's `/us
 
 Replace this line with your answer.
 
-_2.2. What command did you run to answer the previous question _so that you could determine the answer by reading only zero or one line of output_?
+_2.2. What command did you run to answer the previous question so that you could determine the answer by reading only zero or one line of output_?
 
 Replace this line with your answer.
 
