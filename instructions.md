@@ -57,4 +57,4 @@ The `-o grqXY.pdf` option indicates the desired output file. The `pandoc` progra
 
 On your host operating system, open the `learncli` directory in Windows File Explorer or Mac Finder. Then navigate into the `workdir` directory. Here you should see the `grqXY.pdf` file. Open it to be sure it looks formatted as you would expect.
 
-Once you are happy with the resulting PDF file, upload it to the correct GRQ submission page on GitHub. Great work!
+Once you are happy with the resulting PDF file, upload it to the correct GRQ submission page on Gradescope. Great work!
