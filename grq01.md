@@ -1,5 +1,5 @@
 ---
-title: GRQ00 - Chapter 1 and `vim`
+title: GRQ01 - Chapter 2
 author: 
 - Your-Name Here
 geometry: margin=1in
