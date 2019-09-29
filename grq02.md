@@ -15,7 +15,9 @@ _1. Set a profile picture for your account, your name, your company as UNC Chape
 
 _2. In your COMP290 container, `cat` the SSH public key file setup in Lecture 1: `/mnt/learncli/.ssh/id_rsa.pub` Establish this key as a public key with your GitHub account by going to GitHub settings, selecting SSH and GPG keys, and adding a "New SSH Key". You'll want to select, copy, and then paste the key into the Key field. Give it a title of "COMP290 Container" or the likes. Respond to this question by also pasting your key below._
 
+~~~
 Replace this line with your public key.
+~~~
 
 _3. In your COMP290 container, make a directory named `comp290site`. Navigate into the directory. Initialize this directory to be a normal, empty `git` repository as shown in lecture. Create an empty file named `README.md` using the `touch` program. Add `README.md` to staging and make an initial commit._
 
