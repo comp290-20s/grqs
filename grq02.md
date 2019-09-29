@@ -23,7 +23,7 @@ _3. In your COMP290 container, make a directory named `comp290site`. Navigate in
 
 Add each of the commands you ran for #3 here. Consider using the shell's history of commands to avoid retyping.
 
-_4. Use `vim` to edit the file named `README.md`. Add some basic markdown describing that this project is for the COMP290 tools course to practice `git`. Save your changes and exit `vim`. Add the changes you made to this file and make a new commit._
+_4. Use `vim` to edit the file named `README.md`. Add some basic markdown describing that this project is for the COMP290 tools course to practice `git`. Save your changes and exit `vim`. Add the changes you made to this file to staging and make a new commit._
 
 What commands did you run to stage and make this second commit?
 
