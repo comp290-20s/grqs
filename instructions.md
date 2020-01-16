@@ -1,29 +1,31 @@
 ---
 title: GRQ - Instructions 
 author: 
-- COMP290 - Fall 2019
+- COMP290 - Spring 2020
 geometry: margin=1in
 ---
 
 To begin work on GRQs, begin a COMP290 command-line interface container.
 
-On Windows, open PowerShell and navigate to your `learncli` directory. Then issue the command `.\learncli.ps1 comp290`
+On Windows, open PowerShell and navigate to your `learncli` directory. Then issue the command `.\learncli.ps1`
 
-On Mac, open Terminal and navigate to your `learncli` directory. Then issue the command `./learncli.sh comp290`
+On Mac, open Terminal and navigate to your `learncli` directory. Then issue the command `./learncli.sh`
 
 ## Download the Markdown File
 
-Within the container, use `curl` to fetch the GRQ markdown source text from the given web URL and redirect its output to a file. In the example below the letters XY should be replaced with the GRQ assignment number.
+Within the container, use `curl` to fetch the GRQ markdown source text from the given web URL and redirect its output to a file. **In the example below the numbers 00 should be replaced with the GRQ assignment number**.
 
-`curl https://raw.githubusercontent.com/comp290-19f/grqs/master/grqXY.md > grqXY.md`
+`curl https://raw.githubusercontent.com/comp290-20s/grqs/master/grq00.md > grq00.md`
 
-Use the `ls` program to list the files in your current directory and confirm you now have a file named `grqXY.md`.
+Use the `ls` program to list the files in your current directory and confirm you now have a file named `grq00.md`.
 
 ## Open the GRQ Markdown File in `vim`
 
-Run the command `vim grqXY.md`, again replacing `XY` with the GRQ assignment number. This will open `vim`.
+Run the command `vim grq00.md`, again replacing `00` with the GRQ assignment number. This will open `vim`.
 
-Your first task is to change Line 4 "- Your Name Here" on Line 4 to be a dash followed by your actual name.
+Your first task is to change Line 4 "- Your Name Here" on Line 4 to be _a dash followed by a space, followed by your actual name_, for example:
+
+`"- Kris Jordan"`
 
 Refer to the handout and Lecture 1 slides for `vim` command grammar.
 
@@ -31,13 +33,13 @@ To save your work without exiting `vim`, be sure you are in `Normal` mode and ke
 
 To save your work _and_ exit `vim`, also from `Normal` mode, key `ZZ`.
 
-To jump ahead in the file to specific text (i.e. search with Ctrl+F in a web page), from `Normal` mode key a forward slash `/` followed by the text you are searching for and press enter. For example, try `/1.1` and press enter. The text you enter her is a regular expression, just like `grep` uses. Press `n` to jump to the _next_ match and `N` to jump to the _previous_ match. This is helpful for jumping to some specific point in your file.
+To jump ahead in the file to specific text (i.e. search with Ctrl+F in a web page), from `Normal` mode key a forward slash `/` followed by the text you are searching for and press enter. For example, try `/1.1` and press enter. The text you enter here is a regular expression, just like `grep` uses. Press `n` to jump to the _next_ match and `N` to jump to the _previous_ match. This is helpful for jumping to some specific point in your file.
 
 ## Expectations of GRQ Markdown
 
-You are expected to delete and replace the lines which contain the text "Replace this line with your answer."
+You are expected to *delete and replace the lines which contain the text "Replace this line with your answer."*
 
-You should leave in place the original question text.
+You *should* leave in place the original question text.
 
 Anywhere you respond with a `shell command` or `code` you should surround that text with backticks so that it is ultimately formatted in a monospace font.
 
@@ -51,10 +53,10 @@ When you are ready to submit your GRQs to Gradescope, you need to convert the ma
 
 Save your work in `vim` and quit it. From the `learncli$` prompt, issue the command:
 
-`pandoc -o grqXY.pdf grqXY.md`
+`pandoc -o grq00.pdf grq00.md`
 
-The `-o grqXY.pdf` option indicates the desired output file. The `pandoc` program uses the `pdf` extension to decide to do the PDF conversion. The `grqXY.md` argument is the name of your GRQ markdown file.
+The `-o grq00.pdf` option indicates the desired output file. The `pandoc` program uses the `pdf` extension to decide to do the PDF conversion. The `grq00.md` argument is the name of your GRQ markdown file.
 
-On your host operating system, open the `learncli` directory in Windows File Explorer or Mac Finder. Then navigate into the `workdir` directory. Here you should see the `grqXY.pdf` file. Open it to be sure it looks formatted as you would expect.
+On your host operating system, open the `learncli211` directory in Windows File Explorer or Mac Finder. Then navigate into the `workdir` directory. Here you should see the `grqXY.pdf` file. Open it to be sure it looks formatted properly. It should look much like this PDF document and the header should correctly show the title and your name just like the header of this document. If you submit a file with a broken header or that is generated by some means other than `pandoc` as shown above, you will be penalized.
 
 Once you are happy with the resulting PDF file, upload it to the correct GRQ submission page on Gradescope. Great work!
